@@ -3,12 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <link rel="stylesheet" href="scss/main.css">
     <title>Equipe</title>
-</head>
-
-<body>
     <style>
         * {
             margin: 0;
@@ -20,7 +17,37 @@
             width: 100%;
             height: 40px;
         }
+
+        .card img:hover {
+            transform: rotate(15deg) scale(1.1);
+        }
+
+        .card {
+
+            border-radius: 20px 100px 40px 100px;
+            padding: 1rem;
+
+        }
+
+
+        .card img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+
+        }
+
+        .equipe {
+            background-image: url(images/profil/rendu-3d-d-un-fond-de-science-des-particules-qui-coule-avec-une-faible-profondeur-de-champ.jpg);
+        background-size: cover;
+        padding: 3rem;
+        }
     </style>
+</head>
+
+<body>
+
     <header>
 
         <body>
@@ -51,57 +78,274 @@
                 </div>
             </nav>
     </header>
-    <main>
-
-    </main>
-
 
 
     <main>
-        <div class="container py-5">
-            <div class="card" style="width: 18rem;">
-                <img src="images/profil/portrait-d-un-homme-blanc-isole.jpg" class="card-img-top p-5" alt="..."
-                    style="border-radius: 45%">
-                <div class="card-body">
-                    <h5 class="card-title">Nathan Collins</h5>
-                    <p class="card-text">Quelques mots pour introduire Nathan...</p>
-                </div>
+        <section class="equipe bg-secondary">
+            <h1 class="titre text-white text-center mb-4 mt-4 ">Notre équipe</h1>
 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    En savoir plus...
-                </button>
+            <div class="row justify-content-center pt-4">
 
-                <!-- Modal -->
-                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
-                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Nathan Collins</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
-                                perspiciatis qui, aspernatur, commodi sed accusamus, dolorum libero atque accusantium
-                                praesentium eos nemo cupiditate dolore non recusandae quis quasi ab! Necessitatibus non,
-                                culpa voluptatibus neque quod assumenda corrupti unde. Dignissimos mollitia laudantium
-                                nihil natus temporibus eius, provident laborum! Reiciendis, harum?
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="card col-lg-3 sm-12  me-5 " style="width: 18rem;">
+                    <img src="images/profil/portrait-d-un-homme-blanc-isole.jpg" class="card-img-top p-2 rounded-circle"
+                        alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-success text-center">Nathan Collins</h4>
+                        <p class="card-text">Quelques mots pour introduire Nathan...</p>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <div class="button p-1 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            En savoir plus...
+                        </button>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Nathan Collins</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
+                                        perspiciatis qui, aspernatur, commodi sed accusamus, dolorum libero atque
+                                        accusantium
+                                        praesentium eos nemo cupiditate dolore non recusandae quis quasi ab!
+                                        Necessitatibus
+                                        non,
+                                        culpa voluptatibus neque quod assumenda corrupti unde. Dignissimos mollitia
+                                        laudantium
+                                        nihil natus temporibus eius, provident laborum! Reiciendis, harum? </p>
+                                    <div class="icons d-flex justify-content-center  p-2">
+                                        <i class="fa-brands fa-facebook  fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Facebook"></i>
+
+
+                                        <i class="fa-brands fa-linkedin fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Linkedin"></i>
+                                        <i class="fa-brands fa-square-twitter fa-xl" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Twitter"></i>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer p-2">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
+
+
+                <div class="card col-lg-3 sm-12 me-5 " style="width: 18rem;">
+                    <img src="images/profil/portrait-selfie-pour-appel-video.jpg"
+                        class="card-img-top p-2 rounded-circle " alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-success">Stephanie Yorth</h4>
+                        <p class="card-text">Quelques mots pour introduire Stephanie...</p>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <div class="button p-1 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            En savoir plus...
+                        </button>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Stephanie Yorth</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
+                                        perspiciatis qui, aspernatur, commodi sed accusamus, dolorum libero atque
+                                        accusantium
+                                        praesentium eos nemo cupiditate dolore non recusandae quis quasi ab!
+                                        Necessitatibus
+                                        non,
+                                        culpa voluptatibus neque quod assumenda corrupti unde. Dignissimos mollitia
+                                        laudantium
+                                        nihil natus temporibus eius, provident laborum! Reiciendis, harum? </p>
+                                    <div class="icons d-flex justify-content-center  p-2">
+                                        <i class="fa-brands fa-facebook  fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Facebook"></i>
+
+
+                                        <i class="fa-brands fa-linkedin fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Linkedin"></i>
+                                        <i class="fa-brands fa-square-twitter fa-xl" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Twitter"></i>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer p-2">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3 sm-12 me-5 " style="width: 18rem;">
+                    <img src="images/profil/vue-de-face-du-bel-homme.jpg" class="card-img-top p-2 rounded-circle"
+                        alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-success text-center">Corinne Touzet</h4>
+                        <p class="card-text">Quelques mots pour introduire Corinne...</p>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <div class="button p-1 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            En savoir plus...
+                        </button>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Corinne Touzet</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
+                                        perspiciatis qui, aspernatur, commodi sed accusamus, dolorum libero atque
+                                        accusantium
+                                        praesentium eos nemo cupiditate dolore non recusandae quis quasi ab!
+                                        Necessitatibus
+                                        non,
+                                        culpa voluptatibus neque quod assumenda corrupti unde. Dignissimos mollitia
+                                        laudantium
+                                        nihil natus temporibus eius, provident laborum! Reiciendis, harum? </p>
+                                    <div class="icons d-flex justify-content-center  p-2">
+                                        <i class="fa-brands fa-facebook  fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Facebook"></i>
+
+
+                                        <i class="fa-brands fa-linkedin fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Linkedin"></i>
+                                        <i class="fa-brands fa-square-twitter fa-xl" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Twitter"></i>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer p-2">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card col-lg-3 sm-12" style="width: 18rem;">
+                    <img src="images/profil/bel-homme-europeen-mal-rase-une-expression-serieuse-et-confiante-porte-des-lunettes.jpg"
+                        class="card-img-top p-2 rounded-circle" alt="...">
+                    <div class="card-body">
+                        <h4 class="card-title text-success text-center">Jordan Wells</h4>
+                        <p class="card-text">Quelques mots pour introduire Jordan...</p>
+                    </div>
+
+                    <!-- Button trigger modal -->
+                    <div class="button p-1 d-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            En savoir plus...
+                        </button>
+                    </div>
+
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Jordan Wells</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
+                                        perspiciatis qui, aspernatur, commodi sed accusamus, dolorum libero atque
+                                        accusantium
+                                        praesentium eos nemo cupiditate dolore non recusandae quis quasi ab!
+                                        Necessitatibus
+                                        non,
+                                        culpa voluptatibus neque quod assumenda corrupti unde. Dignissimos mollitia
+                                        laudantium
+                                        nihil natus temporibus eius, provident laborum! Reiciendis, harum? </p>
+                                    <div class="icons d-flex justify-content-center  p-2">
+                                        <i class="fa-brands fa-facebook  fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Facebook"></i>
+
+
+                                        <i class="fa-brands fa-linkedin fa-xl me-3" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Linkedin"></i>
+                                        <i class="fa-brands fa-square-twitter fa-xl" data-bs-toggle="tooltip"
+                                            data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                                            title="Lien Twitter"></i>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer p-2">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Fermer</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
-        </div>
-
-
-
-
+        </section>
     </main>
     <footer>
         <div class="container-fluid bg-secondary text-white p-3">
