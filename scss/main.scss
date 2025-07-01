@@ -1,7 +1,9 @@
 // @import "variables";
-$primary:rgb(44, 153, 17);
-$secondary:rgb(173, 219, 162);
+
+$primary:#198754 !default;
+$secondary:rgba(173, 219, 162);
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
 
